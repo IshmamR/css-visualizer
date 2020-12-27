@@ -1,0 +1,90 @@
+* {
+	/*box-sizing: border-box;*/
+}
+
+html, body {
+	max-width: 100%;
+	max-height: 100vh;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	font-family: Arial;
+}
+
+.box-container {
+	position: relative;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background-color, #fff);
+}
+
+.sidebar {
+	box-sizing: border-box;
+	min-width: 130px;
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem 1rem;
+	background-color: #222;
+	color: #fff;
+	overflow-y: scroll;
+}
+
+.sidebar label {
+	margin-top: 0.75rem;
+	margin-bottom: 0.15rem;
+	font-weight: bold;
+}
+
+.divider {
+	margin: 1rem -1rem 0.4rem -1rem;
+	border-bottom: 1px solid #999;
+}
+
+#box {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	margin: 25px;
+	background-color: var(--box-color, #32dc7e);
+	box-shadow: 
+		calc(var(--x-position, 3) * 1px)
+		calc(var(--y-position, 3) * 1px)
+		calc(var(--blur, 4) * 1px)
+		calc(var(--spread, 5) * 1px)
+		var(--shadow-color, #000);
+	border-radius: calc(var(--border-radius, 0) * 1px);
+	border: 
+		calc(var(--border-size, 0) * 1px)
+		solid
+		var(--border-color, #000000);
+}
+
+input:not([type="color"]) {
+	padding: 0.25rem 0.5rem;
+	font-family: inherit;
+	font-size: inherit;
+	border: 1px solid transparent;
+	border-radius: 0.3rem;
+	outline: none;
+}
+
+input:not([type="color"]):focus {
+	border-color: #0af;
+}
+
+input[type="color"] {
+	min-height: 20px;
+	width: 100%;
+	padding: 0.25rem;
+	border-radius: 0.3rem;
+	background-color: #fff;
+	border: none;
+	cursor: pointer;
+}
+

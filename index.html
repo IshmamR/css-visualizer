@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CSS Visualizer</title>
+	<link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+
+	<div class="box-container">
+		<div id="box"></div>
+	</div>
+
+	<div class="sidebar">
+
+		<!-- X and Y Positions -->
+		<label for="x-position">X</label>
+		<input type="number" name="x-position" id="x-position" value="3" />
+		<label for="y-position">Y</label>
+		<input type="number" name="y-position" id="y-position" value="3" />
+
+		<!-- Blur -->
+		<label for="blur">Blur</label>
+		<input type="number" name="blur" id="blur" value="4" />
+
+		<!-- Spread -->
+		<label for="spread">Spread</label>
+		<input type="number" name="spread" id="spread" value="5" />
+
+		<!-- Shadow -->
+		<label for="shadow-color">Shadow</label>
+		<input type="color" name="shadow-color" id="shadow-color" value="#000000" />
+		<input type="hex" name="shadow-color" id="shadow-color-hex" value="#000000" />
+
+		<div class="divider"></div>
+
+		<!-- The Box -->
+		<label for="box-color">Box</label>
+		<input type="color" name="box-color" id="box-color" value="#32dc7e" />
+		<input type="hex" name="box-color" id="box-color-hex" value="#32dc7e" />
+
+		<label for="border-color">Border-color</label>
+		<input type="color" name="border-color" id="border-color" value="#000000" />
+		<input type="hex" name="border-color" id="border-color-hex" value="#000000" />
+
+		<label for="border-size">Border-size</label>
+		<input type="number" name="border-size" id="border-size" value="0" />
+		<label for="border-radius">Border-radius</label>
+		<input type="number" name="border-radius" id="border-radius" value="0" />
+
+		<!-- Background -->
+		<label for="background-color">Background</label>
+		<input type="color" name="background-color" id="background-color" value="#ffffff" />
+		<input type="hex" name="background-color" id="background-color-hex" value="#ffffff" />
+
+	</div>
+
+	<script src="./script.js" defer></script>
+</body>
+</html>
